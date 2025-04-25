@@ -1,0 +1,121 @@
+* {
+  font-family: Anton, Roboto;
+}
+body {
+  background-color: #bef9bb;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+.circle {
+  background-color: #1c9130;
+  width: 913px;
+  height: 913px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  width: 533px;
+  height: 876px;
+  background: linear-gradient(
+    180deg,
+    rgba(239, 245, 252, 0.28) 0%,
+    rgba(150, 255, 168, 0.53) 100%
+  );
+  backdrop-filter: blur(28px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  box-sizing: border-box;
+  padding: 40px 0px;
+}
+.custom-btn {
+  width: 66px;
+  height: 66px;
+  color: rgba(0, 0, 0, 0.2);
+  border: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 21px;
+  background: #d9d9d9;
+  border-radius: 13px;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(5, auto);
+  gap: 40px;
+}
+.display-bar {
+  background-color: transparent;
+  color: #d9d9d9;
+  border: none;
+  font-size: 36px;
+  padding: 10px 4px;
+  text-align: right;
+}
+.display-bar:focus {
+  cursor: none;
+  outline: none;
+}
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.prev-output {
+  color: #d9d9d9;
+  font-size: 21px;
+  margin-bottom: 0px;
+}
+.remove-icon {
+  font-size: 34px;
+  font-weight: bold;
+}
+.row-span-2 {
+  grid-row: span 2;
+  height: 70%;
+}
+.row-span-2:last-child {
+  position: relative;
+  top: -65px;
+  height: 120%;
+}
+.col-span-2 {
+  grid-column: span 2;
+  width: 100%;
+}
+.operator {
+  background-color: #1c9130;
+  color: #d9d9d9;
+}
+.title {
+  font-size: 50px;
+  color: #1c9130;
+  margin: 0px;
+  position: fixed;
+  text-transform: uppercase;
+  top: 35px;
+}
+.footer {
+  bottom: 20px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #1c9130;
+  position: absolute;
+  bottom: 20px;
+}
